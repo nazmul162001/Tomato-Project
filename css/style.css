@@ -1,0 +1,1894 @@
+/* font adding */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+    
+
+
+/* ======================================  Start Top header */
+.container-fluid{
+    width: 100%;
+    padding: 0 40px;
+    
+}
+.margin-left-auto{
+    margin-left: auto;
+}
+.top-header{
+    background: #F69946;
+    padding: 15px 15px;
+    
+}
+.start-top-header .left_site_content a{
+    display: inline-block;
+    width: 30px ;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: .4s;
+    
+}
+.start-top-header .left_site_content a:hover{
+    background: rgba(255, 255, 255,.3);
+}
+.start-top-header .left_site_content a i{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.start-top-header .right_site_content .location > div span i,
+.start-top-header .right_site_content .phone > div span i{
+    color: white;
+    margin-right: 10px;
+}
+
+.start-top-header .right_site_content .location > div span,
+.start-top-header .right_site_content .phone > div span{
+    color: white;
+    font-size: 14px;
+}
+.start-top-header .right_site_content .location,
+.start-top-header .right_site_content .phone {
+    padding: 0px 20px;
+}
+.start-top-header .right_site_content .phone{
+    padding-right: 0;
+}
+.start-top-header .right_site_content .location{
+    border-right: 1px solid white;
+}
+
+
+/* ======================================  End Top header */
+
+
+
+/*======================================   start main-header */
+.main_header {
+    margin-top:30px;
+    display: flex ;
+    align-items: center;
+    
+    
+}
+.main_header .logo img{
+    width: 150px;
+}
+
+.main_header .our-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.main_header .our-menu ul > li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+}
+.main_header .our-menu ul > li a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #222;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight:700;
+    font-family: 'Rubik', sans-serif;
+    transition: .3s;
+    
+}
+.main_header .our-menu ul > li a span{
+    color: #F69946;
+}
+.main_header .our-menu ul > li a:hover{
+    color: #F69946;
+}
+.main_header .header-info .icons{
+    margin-right: 50px;
+}
+
+.main_header .header-info .icons span.raund-border{
+    width: 50px ;
+    height: 50px;
+    line-height:20px ;
+    border-radius: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 2px solid #F69946;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.main_header .header-info .icons span.raund-border i{
+    font-size: 25px;
+}
+.main_header .header-info .icons span i{
+    color: #222;
+    font-size: 22px;
+    transition: .4s;
+
+}
+.main_header .header-info .icons span i:hover{
+    color:#F69946 ;
+}
+
+.btn-primary{
+    padding: 12px 30px;
+    background: #96B416 !important;
+    border: 1px solid transparent !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-primary::after {
+	content: '';
+	position: absolute;
+	width: 180px;
+	transition: .6s ease-in-out;
+	left: 0;
+	height: 130px;
+	background: #779202;
+	transform: rotate(130deg);
+	top: 36px;
+	
+	left: 48px;
+    z-index: -1;
+}
+.btn-primary:hover::after{
+    top: -66px;
+    left: -28px;
+}
+/* Drop Down  */
+.sticky-top{
+    top: 0px;
+}
+
+.main_header{
+background: white;
+height: 90px;
+box-shadow: 5px 5px 15px rgb(233, 223, 223),
+                 0px 0px 0px rgb(233, 223, 223);
+}
+.main_header .our-menu ul > li ul.page_dropdown{
+
+    width: 300px;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+                 -5px -5px 10px rgb(233, 223, 223);
+    position: absolute;
+    top:70px;
+    left:0;
+   padding: 0;
+   margin: 0;
+   transition: .5s;
+   opacity: 0;
+   visibility: hidden;
+   overflow: hidden;
+   z-index: 1;
+}
+.main_header .our-menu ul > li ul.page_dropdown::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:#F69946 ;
+    border-radius: 50%;
+    top:-85px;
+    right: -85px;
+    transition: .6s ease-in-out;
+    z-index: -1;
+    transition: .6s ease-in-out;
+}
+.main_header .our-menu ul > li ul.page_dropdown:hover::after{
+    top:290px;
+    right: 170px;
+}
+
+.main_header .our-menu ul > li:hover ul.page_dropdown {
+    top:50px;
+    opacity: 1;
+    visibility: visible;
+}
+.main_header .our-menu ul > li ul.page_dropdown li{
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.main_header .our-menu ul > li ul.page_dropdown li a{
+    padding: 10;
+    display:block;
+
+
+}
+
+
+/* home Drop Down */
+.main_header .our-menu ul > li ul.home_Dropdown{
+    position: absolute;
+    width: 1200px;
+    background:white;
+    top:70px;
+    left:-210px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+                 -5px -5px 10px rgb(233, 223, 223);
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.main_header .our-menu ul > li:hover ul.home_Dropdown{
+    top:50px;
+    opacity: 1;
+    visibility: visible;
+} 
+.main_header .our-menu ul > li ul.home_Dropdown > li{
+padding: 0;
+}
+.main_header .our-menu ul > li ul.home_Dropdown > li a{
+
+    padding: 20px ;
+    
+}
+.main_header .our-menu ul > li ul.home_Dropdown > li a img{
+    transition: .4s ease-in-out;
+}
+.main_header .our-menu ul > li ul.home_Dropdown > li a img:hover{
+
+    transform: translatey(-10px);
+}
+/* mega drop Down */
+
+.main_header .our-menu ul > li ul.home_Dropdown > li ul.home_1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+
+
+.main_header .our-menu ul > li ul.home_Dropdown li ul.home li a{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #222;
+}
+
+.main_header .our-menu ul > li ul.home_Dropdown li ul.home-long li a{
+    margin-left: 90px;
+    margin-top: 10px;
+    display: inline-block;
+
+    
+}
+
+
+.main_header .our-menu ul > li ul.Portfolio-drop{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    top:70px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+    -5px -5px 10px rgb(233, 223, 223);
+    transition: .4s;
+    opacity:0 ;
+    visibility: hidden;
+    z-index: 1;
+    overflow: hidden;
+}
+.main_header .our-menu ul > li ul.Portfolio-drop::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:#F69946 ;
+    border-radius: 50%;
+    top:-85px;
+    right: -85px;
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+
+.main_header .our-menu ul > li ul.Portfolio-drop:hover:after{
+    top:170px;
+    right: 170px;
+}
+.main_header .our-menu ul > li:hover ul.Portfolio-drop{
+    top:50px;
+    opacity:1 ;
+    visibility: visible;
+}
+.main_header .our-menu ul > li ul.Portfolio-drop li{
+    padding: 10px;
+    margin: 0;
+} 
+.main_header .our-menu ul > li ul.Portfolio-drop li a{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.main_header .our-menu ul > li ul.Blog-drop{
+
+    width: 300px;
+    background: white;
+    padding: 20px;
+    top:70px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+    -5px -5px 10px rgb(233, 223, 223);
+    transition: .4s;
+    opacity:0 ;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    z-index: 1;
+}
+
+.main_header .our-menu ul > li ul.Blog-drop::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:#F69946 ;
+    border-radius: 50%;
+    top:-85px;
+    right: -85px;
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+.main_header .our-menu ul > li ul.Blog-drop:hover::after{
+    top:170px;
+    right: 170px;
+}
+
+
+
+.main_header .our-menu ul > li:hover ul.Blog-drop{
+    opacity:1;
+    visibility: visible;
+    top:50px;
+} 
+.main_header .our-menu ul > li ul.Blog-drop li{
+    padding: 10px;
+    margin: 0;
+}
+
+.main_header .our-menu ul > li ul.Blog-drop li a{
+    padding: 0;
+    margin: 0;
+}
+
+.main_header .our-menu ul > li ul.Shop-drop{
+    width: 300px;
+    background: white;
+    padding: 20px;
+    top:70px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+    -5px -5px 10px rgb(233, 223, 223);
+    transition: .4s;
+    opacity:0 ;
+    visibility: hidden;
+    z-index: 1;
+    overflow: hidden;
+}
+.main_header .our-menu ul > li ul.Shop-drop::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background:#F69946 ;
+    border-radius: 50%;
+    top:-85px;
+    right: -85px;
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+.main_header .our-menu ul > li ul.Shop-drop:hover::after{
+    top:170px;
+    right: 170px;
+}
+.main_header .our-menu ul > li:hover ul.Shop-drop{
+    opacity:1;
+    visibility: visible;
+    top:50px;
+    
+}
+
+.main_header .our-menu ul > li ul.Shop-drop li{
+    padding: 10px;
+    margin: 0;
+}
+.main_header .our-menu ul > li ul.Shop-drop li a{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Start  Hero section */
+
+
+.hero{
+    margin-top: 50px;
+}
+
+.hero .start_hero .left-site{
+    margin-top: 100px;
+    padding: 0;
+}
+.hero .start_hero .left-site h4{
+    color: #F69946;
+}
+.hero .start_hero .left-site h2{
+    font-size: 74px;
+    font-weight: 300;
+}
+
+.hero .start_hero .left-site h2 span{
+    font-weight: 700;
+}
+
+ .btn-secondary{
+    background: none !important;
+    border: 2px solid #96B416 !important;
+    color: #222;
+    padding: 12px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .6s;
+    
+}
+.btn-secondary::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background: #96B416;
+    top:20px;
+    left:60px;
+    transform: rotate(130deg);
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+.btn-secondary:hover::after{
+    top:-40px;
+    left:-80px;
+}
+.btn-success{
+    border: 2px solid #F69946 !important;
+     color: #222;
+    padding: 12px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    background: none !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-success::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background: #F69946;
+    top:20px;
+    left:60px;
+    transform: rotate(130deg);
+    transition: .6s ease-in-out;
+    z-index: -1;
+}
+
+.btn-success:hover::after{
+    top:-50px;
+    left:-80px;
+}
+
+.hero .start_hero .right-site img{
+    width: 750px;
+    animation: image_animation .5s linear infinite ;
+    animation-duration: 2s  ;
+}
+
+@keyframes image_animation {
+   
+    50%{
+        transform: translatex(20px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
+/* End  Hero section */
+
+
+/* start Discount Section  */
+
+.Discounts .card_1 > div:first-child {
+
+    margin-right: 20px;
+}
+.Discounts .card_1 > div:first-child span{
+    border: 1px solid #96B416;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.Discounts .card_1 > div:first-child i{
+    font-size: 20px;
+    color: #96B416;
+    line-height: 50px;
+}
+    
+.Discounts .card_1 > div h4{
+
+    font-size: 18px;
+}
+
+.Discounts .card_1 > div p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* .Discounts .Start_Discounts{
+    width: 100%;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+    -5px -5px 10px rgb(233, 223, 223);
+    height: 200px;
+    padding: 0 20px;
+} */
+
+.Discounts .Start_Discounts{
+    padding-top: 30px;
+    
+    
+}
+
+
+.Discounts .card_1{
+    border-right: 1px solid #ddd;
+    height: 150px;
+    width: 200px;
+    
+    
+}
+.Discounts .card_1{
+    width: 400px;
+    background: white;
+    box-shadow: 5px 5px 15px rgb(233, 223, 223),
+    0px -5px 15px rgb(233, 223, 223);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Discounts .card_1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #96B416;
+    top:-90px;
+    right:-140px;
+    z-index: -1;
+    transition: .4s;
+    transform: rotate(220deg);
+}
+.Discounts .card_1:hover::after{
+    width: 100%;
+}
+
+
+.Discounts .card_1:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.Discounts .card_1:last-child{
+    border-radius: 0 10px 10px 0;
+}
+/* .Discounts .Start_Discounts::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #96B416;
+    top:0;
+    left:0;
+} */
+.Discounts .card_1:last-child{
+    border-right: 1px solid transparent;
+}
+
+
+
+
+
+/* End Discount Section  */
+
+
+
+
+/* start image galary  */
+.image_galary{
+    margin-top: 100px;
+}
+
+.image_galary .start-image-gallrey .left-site-image{
+    position: relative;
+}
+.image_galary .start-image-gallrey .left-site-image .text{
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+
+.image_galary .start-image-gallrey .left-site-image .text h5{
+
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+.image_galary .start-image-gallrey .left-site-image .text span{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.image_galary .start-image-gallrey .left-site-image #zoomping img{
+
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+.image_galary .start-image-gallrey .left-site-image #zoomping:hover img{
+    transform: scale(1.2);
+}
+
+.image_galary .start-image-gallrey .left-site-image{
+    width: 50%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.image_galary .start-image-gallrey .left-site-image img{
+    width: 100%;
+    display: block;
+}
+.image_galary .start-image-gallrey .left-site-image{
+    
+}
+
+figure{
+    overflow: hidden;
+}
+
+.image_galary .start-image-gallrey .right-site-image{
+    width: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.image_galary .start-image-gallrey .right-site-image img{
+    width: 100%;
+    display: block;
+}
+
+.margin-right{
+    margin-right: 20px;
+}
+
+.image_galary .start-image-gallrey .right-site-image .our-image .margin-right img{
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+ 
+
+.image_galary .start-image-gallrey .right-site-image .our-image .margin-right:hover img{
+    transform: scale(1.2);
+}
+
+.image_galary .start-image-gallrey .right-site-image .our-image .left0img img{
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+.image_galary .start-image-gallrey .right-site-image .under-image:hover img{
+    transform: scale(1.2);
+}
+.image_galary .start-image-gallrey .right-site-image .under-image img{
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+.image_galary .start-image-gallrey .right-site-image .our-image .left0img:hover img{
+    transform: scale(1.2);
+}
+
+.image_galary .start-image-gallrey .right-site-image .under-image:hover img{
+    transform: scale(1.2);
+}
+.image_galary .start-image-gallrey .right-site-image .under-image img{
+    transform: scale(1);
+    transition: .4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End image galary  */
+
+
+
+
+
+
+/* start Organic Product */
+
+.Organic_Product{
+    margin-top: 100px;
+    
+}
+.Organic_Product .start_Organic_Product .card_number_1 {
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+	background: #f6f6f6;
+	margin: 15px;
+	box-shadow: 1px 1px 1px rgb(233, 223, 223), -1px -1px 1px rgb(233, 223, 223);
+    position: relative;
+    overflow: hidden;
+}
+.Organic_Product .start_Organic_Product .card_number_1 h4{
+    font-size:20px;
+    font-weight: 600;
+} 
+.Organic_Product .start_Organic_Product .card_number_1 span{
+    color: #E2321A;
+    font-weight: 800;
+
+}
+
+
+
+.Organic_Product .start_Organic_Product .card_number_1 img {
+
+    width: 280px;
+    margin-bottom: 20px;
+    
+    
+
+}
+
+.Organic_Product .start_Organic_Product .card_number_1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    background: rgba(246, 246, 246,.6);
+      top:-100px;
+    left:0;
+    display:inline-block;
+    transition:.4s;
+     opacity: 0;
+    visibility: hidden;
+}
+.Organic_Product .start_Organic_Product .card_number_1:hover::after{
+    opacity: 1;
+    visibility: visible;
+    top:0px;
+}
+.Organic_Product .start_Organic_Product .card_number_1 .icons{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    
+    
+}
+.Organic_Product .start_Organic_Product .card_number_1:hover .icons{
+    top:65%;
+    opacity: 1;
+    visibility: visible;
+}
+.Organic_Product .start_Organic_Product .card_number_1 .icons span{
+    width: 50px;
+    height: 50px;
+    background: #E2321A;
+    display: inline-block;
+    line-height: 55px;
+    border-radius: 50%;
+    
+}
+.Organic_Product .start_Organic_Product .card_number_1 .icons span i{
+    color: white;
+    
+    font-size:20px
+
+}
+
+
+.Organic_Product .start_Organic_Product .card_number_1 .new{
+    position: absolute;
+    top:20px;
+    right:50px;
+}
+.Organic_Product .start_Organic_Product .card_number_1 .new span{
+    width: 60px ;
+    height: 25x;
+    background: #E2321A;
+    color: white;
+    display: inline-block;
+    border-radius:5px ;
+}
+
+ .hadding-menu h3{
+    
+        font-size: 50px;
+        margin-bottom: 20px;
+    
+}
+.hadding-menu P{
+    margin-bottom: 50px;
+}
+
+.hadding-menu{
+    text-align: center;
+}
+
+/* End Organic Product */
+
+
+
+
+.image{
+    display: inline-block;
+    width: 50%;
+    margin-right: 10px;
+}
+figure{
+    overflow: hidden;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image #zoom-in img{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.image #zoom-in:hover img{
+    transform: scale(1.5);
+}
+
+/* ===================== Start  Our Services =========================*/
+.Our_Services{
+    margin-top: 100px;
+}
+
+.Our_Services .start-card{
+    text-align: center;
+}
+.Our_Services .start-card .card-1 figure{
+    overflow: hidden;
+}
+.Our_Services .start-card .card-1{
+    
+    width: 22%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.Our_Services .start-card .card-1 img{
+    width: 100%;
+    
+    
+}
+
+
+.Our_Services .start-card .card-1 img{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+    
+}
+
+.Our_Services .start-card .card-1:hover img{
+    transform: scale(1.1);
+}
+
+
+.Our_Services .start-card .card-1 .text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.Our_Services .start-card .card-1 .text h3{
+    font-size: 25px;
+     width: 100%;
+     display: block;
+     color: white;
+     transition: .3s ease-in-out;
+     cursor: pointer;
+}
+.Our_Services .start-card .card-1 .text h3:hover{
+    color:#A7281B;
+}
+
+.Our_Services .start-card .card-1::after{
+    content: '';
+    position: absolute;
+    background: url(../image2/shape-04.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    top:-100px;
+    left:-100px;
+    z-index: 1;
+    transition: .4s ease-in-out;
+}
+.Our_Services .start-card .card-1:hover::after{
+    top:0;
+    left:0;
+}
+.Our_Services .start-card .card-1 .aro{
+    position: absolute;
+    bottom:0;
+    right: 50px;
+    z-index: 1;
+    transition: .10s ease-in-out;
+
+}
+.Our_Services .start-card .card-1 .aro span{
+    width: 50px ;
+    height: 50px;
+    background:rgb(241, 236, 236);
+    display: inline-block;
+    line-height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: .4s ease-in-out;
+    
+}
+
+.Our_Services .start-card .card-1:hover span{
+
+    background:#E2321A ;
+    transition: .4s ease-in-out;
+    
+}
+.Our_Services .start-card .card-1 .aro{
+    transform: translatex(0px);
+    transition: .4s ease-in-out;
+
+}
+.Our_Services .start-card .card-1:hover .aro{
+    transform: translatex(-70px);
+    transition: .4s ease-in-out;
+    box-shadow: -2px -2px 4px rgb(224, 30, 30,.6);
+    z-index: 1;
+}
+
+.Our_Services .start-card .card-1 .aro span::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background:  white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+
+    
+ 
+}
+
+.Our_Services .start-card .card-1 .aro span i{
+    font-size: 22px;
+    color: #222;
+    transition: .4s ease-in-out;
+    
+    
+}
+
+.Our_Services .start-card .card-1:hover span i{
+    color: white;
+}
+
+
+/* ===================== End  Our Services =========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== Start Working Process =========================*/
+
+.Working_Process .four-img img{
+
+    margin-bottom: 50px;
+}
+.Working_Process .thard-img img{
+
+    margin-bottom: 30px;
+}
+.Working_Process .secont-img img{
+
+    margin-bottom: 10px;
+}
+.Working_Process .fast-img img{
+    margin-bottom: 50px;
+}
+.Working_Process .card-1 h3{
+    font-size: 25px;
+}
+.Working_Process .card-1{
+    text-align: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 26px;
+}
+.Working_Process .card-1 .nmber{
+    position: absolute;
+    top:0;
+    right:0;
+    transition: .4s ease-in-out;
+}
+.Working_Process .card-1:hover .nmber{
+    top:10px;
+    right: 10px;
+    
+}
+.Working_Process .card-1 .nmber span{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background: #E2321A;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.Working_Process{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================== End  Working Process =========================*/
+
+
+
+
+
+
+
+/* ===================== start ONLINE PRODUCT ORDER =========================*/
+
+.online_prodact .container-fluid{
+
+    position: relative;
+}
+.online_prodact{
+    background: #112433;
+    width: 100%;
+    height: 700px;
+     z-index: -1;
+     margin-top: 100px;
+    
+    
+    
+}
+
+
+.online_prodact .start_online .left_site_text h5{
+    color: white;
+    margin-bottom: 30px;
+    
+}
+.online_prodact .start_online .left_site_text h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.online_prodact .start_online .left_site_text p{
+    color: white;
+    margin-bottom: 30px;
+    width: 450px;
+}
+.online_prodact .start_online .left_site_text {
+
+    z-index: 1;
+}
+.online_prodact .start_online .right-site_img img{
+    width: 85%;
+}
+
+.online_prodact .start_online{
+     padding: 100px 0;
+
+     
+}
+.online_prodact .our-container{
+    position: relative;
+}
+.online_prodact .our-container::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #263845;
+    top:100px;
+    left:70px;
+    border-radius: 50%;
+    
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+
+.online_prodact .style_image_1{
+    position: absolute;
+    bottom: 70px;
+    left:70px;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+
+.online_prodact .style_image_2{
+    position: absolute;
+    top:15%;
+    right:40%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+
+.online_prodact .style_image_3{
+    position: absolute;
+    top:70%;
+    right: 50%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+
+}
+.online_prodact .style_image_4{
+    position: absolute;
+    top:50%;
+    right:50%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+.online_prodact .style_image_5{
+    position: absolute;
+    top:60%;
+    right:5%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+.online_prodact .style_image_6{
+    position: absolute;
+    top:15%;
+    right:8%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+.online_prodact .style_image_7{
+    position: absolute;
+    top:35%;
+    right:5%;
+    animation: allanimationsame .4s infinite linear;
+    animation-duration: 1.8s;
+}
+.online_prodact .style_image_8{
+    position: absolute;
+    top:92%;
+    right:30%;
+    animation: oneanimation .4s infinite linear;
+    animation-duration: 3s;
+}
+
+
+
+@keyframes allanimationsame {
+    50%{
+        transform: translatey(10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+@keyframes oneanimation {
+    100%{
+        transform: rotate(360deg);
+    }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== End  Working Process =========================*/
+
+
+
+
+
+
+
+/* ===================== start Don’t Panic Go Organic =========================*/
+
+
+.Watch_Our_Gallery{
+    margin-top:100px ;
+}
+.Watch_Our_Gallery .start-gallrey .image-1 {
+    position: relative;
+}
+.Watch_Our_Gallery .start-gallrey .image-1:hover .note-this-image{
+    opacity: 1;
+    visibility: visible;
+    top:60%;
+
+}
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image{
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease-in-out;
+    overflow: hidden;
+}
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image::after{
+    content: '';
+    position: absolute;
+    width: 100px ;
+    height: 40px;
+    background: #F69946;
+    bottom: -20px;
+    right: -30px;
+    transform: rotate(150deg);
+}
+
+
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image h4:hover{
+    color: #F69946;
+    
+
+}
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image h4{
+    
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    transition: .4s ease-in-out;
+}
+
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image > div span:hover{
+    color: #F69946;
+}
+
+.Watch_Our_Gallery .start-gallrey .image-1 .note-this-image > div span{
+  
+    font-size: 18px;
+    font-weight: 700;
+    color: #9AB916;
+    transition: .4s ease-in-out;
+
+}
+
+.Watch_Our_Gallery .start-gallrey .image-1 img{
+    width: 250px;
+    border-radius: 10px;
+    
+    
+    
+}
+.Watch_Our_Gallery .start-gallrey .image-1:nth-child(4){
+    margin-top: 30px;
+}
+.Watch_Our_Gallery .start-gallrey .image-1:nth-child(2){
+    margin-top: 30px;
+}
+
+
+.Watch_Our_Gallery .container-fluid{
+    margin-bottom: 50px;
+}
+
+.Watch_Our_Gallery .container-fluid > div h2{
+    font-size: 50px;
+}
+.Watch_Our_Gallery .container-fluid > div h4{
+    color: #F69946;
+}
+
+/* ===================== End  Don’t Panic Go Organic =========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== start  Special Features =========================*/
+
+
+.Special_Features{
+    margin-top: 100px;
+}
+.Special_Features .start_card .card_1{
+    padding: 10px 60px;
+    margin-top: 50px;
+}
+
+.Special_Features .start_card .card_1 h2{
+    font-size: 30px;
+}
+.Special_Features .start_card .card_1 p{
+    color: #7b8e9d;
+    margin-bottom: 20px;
+}
+.Special_Features .start_card .card_1 img{
+    margin-bottom: 30px;
+}
+   
+
+
+
+
+/* ===================== End  Special Features =========================*/
+
+
+
+
+
+
+/* ===================== Start Best for You =========================*/
+
+.Best_for_You{
+    margin-top: 100px;
+}
+.Best_for_You .start_card .card_1:nth-child(1){
+    margin-left: 0;
+}
+.Best_for_You .start_card .card_1:nth-child(6){
+
+    margin-right: 0;
+}
+.Best_for_You .start_card .card_1 .card-icons span:hover{
+    background: #96B416;
+}
+.Best_for_You .start_card .card_1 .card-icons span {
+
+    width: 50px;
+    height: 50px;
+    background:#F69946 ;
+    display: inline-block;
+    text-align: center;
+    
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    
+}
+.Best_for_You .start_card .card_1 .card-icons span i{
+    line-height: 50px;
+    font-size: 25px;
+    color: white;
+}
+.Best_for_You .start_card .card_1 .card-icons{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    opacity: 0;
+    visibility: hidden;
+}
+.Best_for_You .start_card .card_1 .sale span{
+    display: inline-block;
+    background: #E92424;
+    color: white;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+.Best_for_You .start_card .card_1 .sale{
+
+    position: absolute;
+    top:-11px;
+    left: 20px;
+}
+.Best_for_You .start_card .card_1 .card-icons{
+    transform: translatey(30px);
+    transition: .4s ease-in-out;
+    
+}
+.Best_for_You .start_card .card_1:hover .card-icons{
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(-230px);
+}
+
+.Best_for_You .start_card .card_1{
+    background: #FEF7EF;
+    width: 180px ;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+    position: relative;
+}
+
+.Best_for_You .start_card .card_1:hover{
+    border: 2px solid #F69946;
+}
+
+.Best_for_You .start_card .card_1 img{
+    width: 150px;
+}
+
+.Best_for_You .start_card .card_1 h3:hover{
+
+    color: #F69946;
+
+}
+.Best_for_You .start_card .card_1 h3{
+
+    font-size: 20px;
+    transition: .4s ease-in-out;
+}
+.Best_for_You .start_card .card_1 span{
+
+    color: #96B416;
+    font-weight: 600;
+    
+}
+.Best_for_You .start_card .card_1 > div{
+    margin-top: 10px;
+}
+.Best_for_You .start_card .card_1 .starr span i{
+
+    color: #F69946;
+}
+.Best_for_You .hadding-menu h5{
+    font-size: 30px;
+    color: #F69946;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== End  Best for You =========================*/
+
+
+
+/* ===================== start  Working_Process =========================*/
+
+h6{
+    margin-bottom: 0;
+}
+.Working_Process .start_card .card_1{
+    margin-top: 30px;
+}
+.Working_Process .start_card .card_1 img{
+    width: 330px;
+    margin-bottom: 40px;
+}
+.Working_Process .start_card .card_1 .icons .Date{
+
+    margin-right: 20px;
+    
+}
+.Working_Process .start_card .card_1 .icons .Date > div:nth-child(1){
+ margin-right: 10px;
+}
+.Working_Process .start_card .card_1 .icons .sms > div:nth-child(1){
+ margin-right: 10px;
+}
+.Working_Process .start_card .card_1 .icons .sms > div:nth-child(1) span i{
+ 
+    color: #E92424;
+}
+.Working_Process .start_card .card_1 .icons .Date > div:nth-child(1) span i{
+    color: #E92424;
+}
+
+.Working_Process .start_card .card_1 .icons {
+    margin-bottom: 20px;
+}
+.Working_Process .start_card .card_1 .icons .Date > div h6{
+    color: #7A7A7A;
+    font-weight: 400;
+}
+.Working_Process .start_card .card_1 .icons .sms > div h6{
+    color: #7A7A7A;
+    font-weight: 400;
+}
+.Working_Process .start_card .card_1 .icons .Date{
+
+
+}
+.Working_Process .start_card .card_1 h2{
+
+    font-size: 25px;
+    font-weight: 400;
+}
+.Working_Process .start_card .card_1 p{
+
+    color:#7A7A7A ;
+}
+.our-container{
+    width: 90%;
+}
+
+
+
+
+
+/* ===================== End  Working_Process =========================*/
+
+
+
+
+
+
+
+
+
+
+/* ===================== Start  Don’t Panic Go Organic =========================*/
+
+.We_Offer_for_You{
+    margin-top: 100px;
+}
+
+.We_Offer_for_You .start-card .card_1 img{
+    width: 300px;
+}
+
+.We_Offer_for_You .start-card .card_1{
+    text-align: center;
+    padding: 20px 30px;
+    background: #F1F3E8;
+    margin: 5px 20px;
+    border-radius: 10px;
+}
+
+.We_Offer_for_You .start-card .card_1 p{
+    
+    margin-bottom: 50px;
+    font-size: 15px;
+    
+
+}
+
+.We_Offer_for_You .start-card .card_1 h3{
+    
+    margin-bottom: 20px;
+}
+
+
+.We_Offer_for_You .start-card .card_1:nth-child(1) img{
+
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================== End  Don’t Panic Go Organic =========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== Start  Footer =========================*/
+
+
+.Tomato{
+    background: #ECF1DF;
+    width: 100%;
+    height: 650px;
+    margin-top: 100px;
+}
+.Tomato .start_top-Footer{
+    padding-top:40px ;
+}
+.Tomato .start_top-Footer .menu a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 700;
+    color: #222;
+    transition: .4s ease-in-out;
+}
+
+.Tomato .start_top-Footer .footer_image img{
+    width: 150px;
+}
+.Tomato .start_top-Footer .menu a:hover{
+    color: #E92424;
+}
+
+.Tomato .container-fluid hr{
+    margin-top: 50px;
+}
+
+
+.Tomato .start_footer_content{
+    margin-top: 50px;
+}
+
+.Tomato .start_footer_content .start_1 h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Tomato .start_footer_content .start_1 .icons span:nth-child(1){
+    margin-left: 0;
+}
+.Tomato .start_footer_content .start_1 .icons span{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #a7a6a6;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.Tomato .start_footer_content .start_1 .icons span i{
+
+    
+    color: #4b4949;
+    line-height: 40px;
+}
+
+.Tomato .start_footer_content .start_2 h3{
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.Tomato .start_footer_content .start_2 a{
+    text-decoration: none;
+    display: block;
+    color:#222 ;
+    padding: 5px;
+}
+
+.Tomato .start_footer_content .start_3 h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Tomato .start_footer_content .start_3 .phone{
+    margin-bottom: 10px;
+}
+.Tomato .start_footer_content .start_3 .phone > div:nth-child(1){
+    margin-right: 10px;
+}
+.Tomato .start_footer_content .start_3 .phone > div:nth-child(1) span i{
+    color: red;
+    font-size: 18px;
+}
+
+.Tomato .start_footer_content .start_3 .email{
+    margin-bottom: 10px;
+}
+.Tomato .start_footer_content .start_3 .email > div:nth-child(1){
+    margin-right: 10px;
+}
+.Tomato .start_footer_content .start_3 .email > div:nth-child(1) span i{
+    color: red;
+    font-size: 18px;
+}
+
+.Tomato .start_footer_content .start_3 .location{
+    margin-bottom: 10px;
+}
+.Tomato .start_footer_content .start_3 .location > div:nth-child(1){
+    margin-right: 10px;
+}
+.Tomato .start_footer_content .start_3 .location > div:nth-child(1) span i{
+    color: red;
+    font-size: 18px;
+}
+
+
+.Tomato .start_footer_content .start_4 h3{
+    font-size: 20px;
+}
+
+
+.Tomato .start_footer_content .start_4 a{
+    display: inline-block;
+}
+.Tomato .start_footer_content .start_4 a img{
+    width: 80px;
+    margin-top: 10px;
+
+}
+
+.Tomato .start_footer_content{
+    padding: 50px 0;
+}
+.Tomato .last_copy_right a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    padding: 10px;
+}
+.Tomato .last_copy_right{
+    margin-top: 40px;
+}
+
+/* ===================== End  Footer =========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
